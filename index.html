@@ -96,6 +96,10 @@
     .blk4 .cennik {
       font-size: 140%;
     }
+    .blk5 {
+      display: flex;
+      justify-content: space-between;
+    }
     .blk5 .contact{
       font-size: 150%;
       font-weight: bold;
@@ -103,6 +107,11 @@
     }
     .blk5 .address{
       padding-top: 3rem;
+    }
+    #map {
+      width: 18rem;
+      height: 18rem;
+      margin-left: 2rem;
     }
     .blk6 {
       background-color: #fc7571;
@@ -114,6 +123,25 @@
     }
     .accent {
       color: #fc7571;
+    }
+
+    /* Medium screens */
+    @media all and (max-width: 1400px) {
+      .blk5 {
+        flex-direction: column;
+      }
+      #map {
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    /* Small screens */
+    @media all and (max-width: 1000px) {
+      body > div {
+        padding: 2rem 6vw;
+      }
     }
   </style>
   <script>
@@ -197,17 +225,28 @@
     </p>
   </div>
   <div class="blk5">
-    <div class="contact">
-      <span class="accent">+</span>48 505 974 909<br/>
-      seedofcolor<span class="accent">@</span>gmail.com<br/>
-      skype<span class="accent">:</span> stntla
+    <div>
+      <div class="contact">
+        <span class="accent">+</span>48 505 974 909<br/>
+        seedofcolor<span class="accent">@</span>gmail.com<br/>
+        skype<span class="accent">:</span> stntla
+      </div>
+      <div class="address">
+        SEED OF COLOR NATALIA STACHURA<br/>
+        ul. M. Moskwy 19/2, 81-708 Sopot / POLAND<br/>
+        NIP: 585 142 15 08
+      </div>
     </div>
-    <div class="address">
-      SEED OF COLOR NATALIA STACHURA<br/>
-      ul. M. Moskwy 19/2, 81-708 Sopot / POLAND<br/>
-      NIP: 585 142 15 08
-    </div>
+    <div id="map"></div>
   </div>
   <div class="blk6">seedofcolor.com 2017 © all rights reserved</div>
+  <script>
+    function initMap() {
+      var sopot = {lat: 54.4469021, lng: 18.5629103};
+      var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: sopot});
+      var marker = new google.maps.Marker({position: sopot, map: map});
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 </html>
