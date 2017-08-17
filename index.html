@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="We're SEED OF COLOR, a company devoted to data visualisation, infographics and ebook design. We specialize in layout design, publications, branding and advertising.">
+  <meta name="keywords" content="infographics,layout,graphics,ebook-design,data-visualization,UI">
   <meta name="author" content="Natalia Stachura">
   <!-- for Facebook -->
   <!-- <meta property="og:title" content="Seed of Color">
@@ -21,9 +21,12 @@
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content=""> -->
 
+  <link rel="icon" type="image/png" sizes="32x32" href="favi16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favi32.png">
+
   <title>Seed of Color</title>
   <!-- <link rel="canonical" href="https://seedofcolor.com"> -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400" rel="stylesheet">
   <style>
     body {
       font-size: 125%;
@@ -45,7 +48,7 @@
     .blk1 p {
       text-transform: uppercase;
       font-weight: 700;
-      transform: translate(3.5rem,-30px);
+      transform: translate(3.5rem,-1.1rem);
       margin: 0;
       font-size: 60%;
     }
@@ -64,16 +67,17 @@
     }
     .blk2 {
       color: white;
-      background-image: url("resources/header full.jpg");
+      background-image: url("resources/header sat.jpg");
       background-size: cover;
       background-position: 0 75%;
       text-align: center;
-      padding: 4.5rem 0;
+      padding: 5rem 0;
       font-size: 280%;
       box-shadow: inset 0px 19px 12px -20px rgba(0,0,0,0.75);
     }
     .blk2 > span {
       letter-spacing: 0.2rem;
+      font-weight: 300;
     }
     .blk2 p {
       margin: 0;
@@ -93,15 +97,12 @@
       background-color: #323232;
       color: white;
     }
-    .blk4 .cennik {
-      font-size: 140%;
-    }
     .blk5 {
       display: flex;
       justify-content: space-between;
     }
     .blk5 .contact{
-      font-size: 150%;
+      font-size: 120%;
       font-weight: bold;
       letter-spacing: 2px;
     }
@@ -126,7 +127,7 @@
     }
 
     /* Medium screens */
-    @media all and (max-width: 1400px) {
+    @media all and (max-width: 1200px) {
       .blk5 {
         flex-direction: column;
       }
@@ -186,7 +187,7 @@
     </div>
   </div>
   <div class="blk2">
-    <span class="en">THE LOOKING PLEASURES</span>
+    <span class="en">VISUAL PLEASURES</span>
     <span class="pl">PRZYJEMNOŚĆ PATRZENIA</span>
     <p>
       <a href="resources/SOC-OFERTA-2017.pdf" target="_blank">offer<span class="accent">_</span>2017<span class="accent">.pdf</span></a>
@@ -194,8 +195,8 @@
   </div>
   <div class="blk3">
     <p>
-      <span class="en">Hello, my name is Natalia Stachura. For the last 8 years I have been working as a Graphic Designer For Clients across the globe, including United States, Great Britain, Denmark, France and Poland. I graduated from Art University in Poznan, Poland, Department oF Graphic Design.</span>
-      <span class="pl">Nazywam się Natalia Stachura. Od 8 lat pracuję jako projektant graficzny dla Klientów w Polsce i zagranica. Ukończyłam projektowanie graficzne na Uniwersytecie Artystycznym w Poznaniu.</span>
+      <span class="en">Hello, my name is Natalia Stachura. For the last 8 years I have been working as a Graphic Designer for Clients across the globe, including United States, Great Britain, Denmark, France and Poland. I&nbsp;graduated from Art University in Poznan, Poland, Department of Graphic Design.</span>
+      <span class="pl">Nazywam się Natalia Stachura. Od 8 lat pracuję jako projektant graficzny dla Klientów w Polsce i&nbsp;zagranicą. Ukończyłam projektowanie graficzne na Uniwersytecie Artystycznym w Poznaniu.</span>
     </p>
     <p>
       <span class="en">When approaching a project I always try to apply the most convenient practical solutions concerning project itself, the deadline, work stages and the form of comunication upon the draft, all accustomed to my Clients' needs.</span>
@@ -203,10 +204,6 @@
     </p>
   </div>
   <div class="blk4">
-    <p class="cennik">
-      <span class="en">PRICING</span>
-      <span class="pl">CENNIK</span>
-    </p>
     <p>
       <strong>
         <span class="en">Price per page of a publication:<br/>starting at 20 EUR / 20 USD</span>
@@ -221,7 +218,7 @@
     </p>
     <p>
       <strong>
-        <span class="en">Price per Infographic: starting from 300 EUR / 300USD</span>
+        <span class="en">Price per Infographic: starting from 300 EUR / 300 USD</span>
         <span class="pl">Infografika: od 300 PLN</span>
       </strong>
     </p>
@@ -239,7 +236,7 @@
       </div>
       <div class="address">
         SEED OF COLOR NATALIA STACHURA<br/>
-        ul. M. Moskwy 19/2, 81-708 Sopot / POLAND<br/>
+        ul. M. Mokwy 19/2, 81-708 Sopot / POLAND<br/><br/>
         NIP: 585 142 15 08
       </div>
     </div>
@@ -248,7 +245,7 @@
   <div class="blk6">seedofcolor.com 2017 © all rights reserved</div>
   <script>
     function initMap() {
-      var sopot = {lat: 54.4469021, lng: 18.5629103};
+      var sopot = {lat: 54.4467876, lng: 18.5621789};
       var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: sopot});
       var marker = new google.maps.Marker({position: sopot, map: map});
     }
