@@ -172,7 +172,13 @@
     pl.addEventListener('click', showPl(true));
     en.addEventListener('click', showPl(false));
   });
+  function map() {
+    var sopot = {lat: 54.4467876, lng: 18.5621789};
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: sopot});
+    var marker = new google.maps.Marker({position: sopot, map: map});
+  }
   </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcTrmzXs1sKMKvQwC6bKrJ-3QI3tamDKw&callback=map"></script>
 </head>
 <body>
   <div class="blk1">
@@ -243,13 +249,5 @@
     <div id="map"></div>
   </div>
   <div class="blk6">seedofcolor.com 2017 © all rights reserved</div>
-  <script>
-    function initMap() {
-      var sopot = {lat: 54.4467876, lng: 18.5621789};
-      var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: sopot});
-      var marker = new google.maps.Marker({position: sopot, map: map});
-    }
-  </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcTrmzXs1sKMKvQwC6bKrJ-3QI3tamDKw&callback=initMap"></script>
 </body>
 </html>
