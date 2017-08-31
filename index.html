@@ -174,7 +174,8 @@
   });
   function map() {
     var sopot = {lat: 54.4467876, lng: 18.5621789};
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: sopot});
+    var center = {lat: sopot.lat, lng: sopot.lng+0.007};
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: center});
     var marker = new google.maps.Marker({position: sopot, map: map});
   }
   </script>
