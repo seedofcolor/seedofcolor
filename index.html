@@ -99,8 +99,35 @@
       text-align: center;
     }
     .blk4 {
+      position: relative;
       background-color: #323232;
       color: white;
+      background-image: url("resources/bkg 2 full.png");
+      background-size: cover;
+      background-position: 0 75%;
+    }
+    .blk4 > p {
+      margin: 0.5em 0;
+    }
+    .blk4 > p:last-child {
+      margin: 2.5em 0 1em 0;
+    }
+    .blk4 > div {
+      display: inline-block;
+      float: right;
+      transform: translateY(3em);
+      border: 3px solid #fc7571;
+      padding: 0.3rem 2rem;
+      font-size: 1rem;
+      background-color: rgba(255, 255, 255, 0);
+      transition: background-color 100ms ease-in;
+    }
+    .blk4 > div:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .blk4 > div a {
+      color: #fc7571;
+      text-decoration: none;
     }
     .blk5 {
       display: flex;
@@ -157,6 +184,12 @@
       }
       .blk1 div {
         padding: 0 1rem;
+      }
+    }
+    @media all and (max-width: 700px) {
+      .blk4 > div {
+        float: none;
+        transform: none;
       }
     }
   </style>
@@ -220,27 +253,25 @@
     </p>
   </div>
   <div class="blk4">
+    <div>
+      <span class="en"><a href="resources/Pricing Packages SOC 2017.pdf" target="_blank">PRICING PACKAGES</a></span>
+      <span class="pl"><a href="resources/Cennik SOC 2017.pdf" target="_blank">ZOBACZ PAKIETY</a></span>
+    </div>
     <p>
-      <strong>
-        <span class="en">Price per page of a publication:<br/>starting at 30 EUR / 30 USD</span>
-        <span class="pl">Cena strony publikacji: od 30 PLN</span>
-      </strong>
+      <span class="en">Price per page of a publication:<br/><strong>starting at 30 EUR / 30 USD</strong></span>
+      <span class="pl">Cena strony publikacji: <strong>od 30 PLN</strong></span>
     </p>
     <p>
-      <strong>
-        <span class="en">Price for single-page project, e.g. poster, outdoor ad, flyer:<br/>starting at 80 EUR / 80 USD</span>
-        <span class="pl">Cena projektu jednostronnego: od 100 PLN</span>
-      </strong>
+      <span class="en">Price for single-page project, e.g. poster, outdoor ad, flyer:<br/><strong>starting at 80 EUR / 80 USD</strong></span>
+      <span class="pl">Cena projektu jednostronnego: <strong>od 100 PLN</strong></span>
     </p>
     <p>
-      <strong>
-        <span class="en">Price per Infographic: starting from 300 EUR / 300 USD</span>
-        <span class="pl">Infografika: od 300 PLN</span>
-      </strong>
+      <span class="en">Price per Infographic: <strong>starting from 300 EUR / 300 USD</strong></span>
+      <span class="pl">Infografika: <strong>od 300 PLN</strong></span>
     </p>
     <p>
-      <span class="en">Detailed pricing and time valuation are available upon request via e-mail, skype and phone. Looking forward to hearing from you!</span>
-      <span class="pl">Szczegółowe wyceny i czas wykonania projektów są dostępne poprzez e-mail lub telefon. Zapraszam do kontaktu.</span>
+      <strong><span class="en">Detailed pricing and time valuation are available upon request via e-mail, skype and phone. Looking forward to hearing from you!</span></strong>
+      <strong><span class="pl">Szczegółowe wyceny i czas wykonania projektów są dostępne poprzez e-mail lub telefon. Zapraszam do kontaktu.</span></strong>
     </p>
   </div>
   <div class="blk5">
