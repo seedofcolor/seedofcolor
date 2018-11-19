@@ -96,7 +96,22 @@
       background-color: rgba(255, 255, 255, 0.5);
     }
     .blk3 {
-      text-align: center;
+      position: relative;
+      display: flex;
+      text-align: left;
+      font-size: 0.9em;
+    }
+    .blk3 > div:first-child {
+      flex: 2 0 0;
+    }
+    .blk3 > div:last-child {
+      flex: 1 0 0;
+    }
+    .blk3 img{
+      width: 100%;
+      max-width: 12em;
+      padding: 1em 1.5em;
+      box-sizing: border-box;
     }
     .blk4 {
       position: relative;
@@ -164,7 +179,7 @@
 
     /* Medium screens */
     @media all and (max-width: 1200px) {
-      .blk5 {
+      .blk3, .blk5 {
         flex-direction: column;
       }
       #map {
@@ -251,14 +266,19 @@
     </p>
   </div>
   <div class="blk3">
-    <p>
-      <span class="en">My name is Natalia Stachura. Since 2009 I have been working as a Graphic Designer for Clients across the globe, including the United States, Great Britain, Denmark, France and Poland. I&nbsp;graduated from Art University in Poznan, Poland, Department of Graphic Design.</span>
-      <span class="pl">Nazywam się Natalia Stachura. Od 2009 r. pracuję jako projektant graficzny dla Klientów w Polsce i&nbsp;za granicą. Ukończyłam projektowanie graficzne na Uniwersytecie Artystycznym w Poznaniu.</span>
-    </p>
-    <p>
-      <span class="en">When approaching a project, I always try to apply the most convenient practical solutions concerning the project itself, the deadline, work stages and the form of comunication upon the draft, all adjusted to my Clients' needs.</span>
-      <span class="pl">Przy każdym projekcie dbam o rzeczowe podejście i możliwie krótkie terminy, dostosowane do Państwa potrzeb.</span>
-    </p>
+    <div>
+      <p>
+        <span class="en">My name is Natalia Stachura. Since 2009 I have been working as a Graphic Designer for Clients across the globe, including the United States, Great Britain, Denmark, France and Poland. I&nbsp;graduated from Art University in Poznan, Poland, Department of Graphic Design.</span>
+        <span class="pl">Nazywam się Natalia Stachura. Od 2009 r. pracuję jako projektant graficzny dla Klientów w Polsce i&nbsp;za granicą. Ukończyłam projektowanie graficzne na Uniwersytecie Artystycznym w Poznaniu.</span>
+      </p>
+      <p>
+        <span class="en">When approaching a project, I always try to apply the most convenient practical solutions concerning the project itself, the deadline, work stages and the form of comunication upon the draft, all adjusted to my Clients' needs.</span>
+        <span class="pl">Przy każdym projekcie dbam o rzeczowe podejście i możliwie krótkie terminy, dostosowane do Państwa potrzeb.</span>
+      </p>
+    </div>
+    <div>
+      <img src="resources/natalia.png" alt="Natalia"/>
+    </div>
   </div>
   <div class="blk4">
     <div>
